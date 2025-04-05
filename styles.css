@@ -301,8 +301,13 @@ html {
     position: relative;
 }
 
+.project-modal-content p, .project-modal-content ul{
+    text-align: justify;
+    line-height: 1.7;
+}
+
 .modal-image {
-    width: 100%;
+    width: 70%;
     margin: 1rem 0;
     border-radius: 10px;
 }
