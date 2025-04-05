@@ -181,3 +181,143 @@ html {
         height: auto;
     }
 }
+
+.about-department {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    color: #333;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.dept-left {
+    flex: 1 1 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.dept-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dept-right {
+    flex: 1 1 60%;
+}
+
+.dept-right h2 {
+    font-size: 2.5rem;
+    color: #0f2027;
+    margin-bottom: 1rem;
+}
+
+.dept-right p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-department {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .dept-left,
+    .dept-right {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.projects-section {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Modal Styles */
+  .project-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    padding-top: 60px;
+  }
+  
+  .project-modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 800px;
+    position: relative;
+  }
+  
+  .modal-image {
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 10px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #000;
+  }
+  
