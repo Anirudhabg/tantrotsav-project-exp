@@ -57,11 +57,14 @@ html {
 }
 
 .title {
-    font-family: "Nosifer", sans-serif;
+    font-family: "Rubik Glitch", system-ui;
     font-size: 8rem;
-    font-weight: bold;
+    font-weight: 100;
     letter-spacing: 4px;
-    color: #00e6e6;
+    color: white;
+    text-shadow: 
+    5px 0 red, 
+    -5px 0 blue;
 }
 
 .subtitle {
@@ -386,12 +389,12 @@ html {
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .footer-left {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .footer-logo {
