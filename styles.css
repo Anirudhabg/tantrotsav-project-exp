@@ -8,7 +8,7 @@
 
 body,
 html {
-    height: 100%;
+    height: auto;
     width: 100%;
     font-family: "Questrial", sans-serif;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
@@ -242,21 +242,21 @@ html {
 .projects-section {
     padding: 4rem 2rem;
     background-color: #f5f5f5;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
-  }
-  
-  .projects-grid {
+}
+
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 2rem;
-  }
-  
-  .project-card {
+}
+
+.project-card {
     background-color: #fff;
     padding: 1rem;
     border-radius: 15px;
@@ -264,22 +264,22 @@ html {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.2s ease;
-  }
-  
-  .project-card img {
+}
+
+.project-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 1rem;
-  }
-  
-  .project-card:hover {
+}
+
+.project-card:hover {
     transform: scale(1.03);
-  }
-  
-  /* Modal Styles */
-  .project-modal {
+}
+
+/* Modal Styles */
+.project-modal {
     display: none;
     position: fixed;
     z-index: 999;
@@ -288,26 +288,26 @@ html {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     padding-top: 60px;
-  }
-  
-  .project-modal-content {
+}
+
+.project-modal-content {
     background-color: #fff;
     margin: auto;
     padding: 2rem;
     border-radius: 15px;
     max-width: 800px;
     position: relative;
-  }
-  
-  .modal-image {
+}
+
+.modal-image {
     width: 100%;
     margin: 1rem 0;
     border-radius: 10px;
-  }
-  
-  .close-btn {
+}
+
+.close-btn {
     position: absolute;
     top: 20px;
     right: 25px;
@@ -315,9 +315,81 @@ html {
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
-  }
-  
-  .close-btn:hover {
+}
+
+.close-btn:hover {
     color: #000;
-  }
-  
+}
+
+
+.footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo {
+    height: 80px;
+    width: auto;
+}
+
+.college-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.vivekananda {
+    color: orange;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.vcet-sub {
+    color: white;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.footer-right {
+    max-width: 400px;
+}
+
+.footer-right a {
+    color: orange;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-logo {
+        height: 60px;
+    }
+}
