@@ -8,7 +8,6 @@
 
 The website serves as a digital portal to:
 - Showcase innovative student projects
-- Provide event details and schedules
 - Present information about the college and the MCA department
 - Celebrate the spirit of technical exploration and creativity
 
@@ -47,4 +46,4 @@ For any queries or contributions, feel free to reach out via [anirudhabg@gmail.c
 
 ---
 
-> Made with ❤️ by Anirudha B G Somayaji
+> Crafted by Anirudha B G Somayaji
