@@ -230,6 +230,78 @@ const projects2026 = [
         image: "Assets/Images/Project-2k26/7/system.png",
         circuit: "",
         github: ""
+    },
+    {
+        title: "AI-Integrated Web-Based Virtual Laboratory Workbench for Computer Science Students using Docker",
+        description: "The rapid expansion of computer science education and the growing need for remote and flexible learning environments have exposed limitations in traditional laboratory infrastructure, including high costs, limited accessibility, and inadequate student support. This project presents an AI-Integrated Web-Based Virtual Laboratory Workbench that delivers a secure, scalable, and accessible learning environment. It utilizes Docker containerization to provide isolated and reproducible lab environments accessible anytime, anywhere, eliminating complex local setups. AI integration offers real-time debugging assistance, code explanations, and contextual guidance, enhancing student learning and reducing instructor workload. The platform supports Python, Java, C, C++, and JavaScript, with separate dashboards for students and administrators for task management, session control, performance analytics, and gamification. Experimental results indicate improved accessibility, reduced setup time, consistent execution environments, and enhanced learning outcomes.",
+        tech: "Node.js, Express.js, Docker, OpenAI API",
+        flowchart: "Assets/Images/Project-2k26/8/flow.png",
+        image: "Assets/Images/Project-2k26/8/system.png",
+        circuit: "",
+        github: ""
+    },
+    {
+        title: "AI Powered Grocery Expiry Prediction and Tracking System",
+        description: "This project addresses the challenge of managing groceries and monitoring expiration dates in retail stores. Manual monitoring often results in missed or expired products. The system allows users to upload CSV files, scan images, or manually enter product details. It extracts product name, expiration date, and freshness, categorizing items as fresh, near expiration, or expired. An intuitive dashboard with pie charts and color-coded indicators displays the data. Alerts notify users about products nearing expiration. This system improves inventory control, reduces waste, enhances grocery tracking, and increases efficiency and reliability in grocery management.",
+        tech: "Python, Flask, SQLite, Scikit-Learn, EasyOCR, Pillow, OpenCV, Chart.js",
+        flowchart: "Assets/Images/Project-2k26/9/flow.png",
+        image: "Assets/Images/Project-2k26/9/system.png",
+        circuit: "",
+        github: ""
+    },
+    {
+        title: "Intelligent IoT Smart Navigation Stick",
+        description: "The Intelligent IoT Smart Navigation Stick provides an autonomous, safe navigation solution for visually impaired individuals. Conventional canes fail to alert users to environmental hazards. This project combines intelligent sensor technology with IoT to detect obstacles using ultrasonic sensors and water/environmental sensors, providing real-time warnings. GPS-based tracking and an SOS system help caregivers locate users in emergencies. Testing shows effective obstacle detection and alert functionality. This affordable system enhances user confidence, situational awareness, and safety while navigating.",
+        tech: "ESP32, Ultrasonic Sensor, Water Sensor, Vibration Motor, DFPlayer Mini, GPS Module, GSM Module, SOS Button, Arduino IDE",
+        flowchart: "Assets/Images/Project-2k26/10/flow.png",
+        image: "Assets/Images/Project-2k26/10/system.png",
+        circuit: "Assets/Images/Project-2k26/10/circuit.png",
+        github: ""
+    },
+    {
+        title: "Efficient Library Management System Using IOT",
+        description: "Libraries often struggle to manage large collections efficiently. Manual arrangements result in misplaced books, delayed searches, and increased staff workload. This IoT-based system uses ESP32 microcontrollers, RFID, noise sensors, and a web interface to help users locate books. Online search activates LEDs on shelves, and RFID tags ensure accurate book identification. Noise monitoring maintains a quiet environment. Borrow and return transactions are automated, with late returns detected and fines calculated automatically. The system enhances search efficiency, reduces human effort, improves discipline, and increases overall accuracy in library operations.",
+        tech: "ESP32, RFID Reader and Tag, Noise Sensor, LED and Buzzer",
+        flowchart: "Assets/Images/Project-2k26/11/flow.png",
+        image: "Assets/Images/Project-2k26/11/system.png",
+        circuit: "Assets/Images/Project-2k26/11/circuit.png",
+        github: ""
+    },
+    {
+        title: "SafeBuddy: An Intelligent System for Passenger Safety and Driver Health Monitoring",
+        description: "SafeBuddy enhances public transport safety by integrating multiple IoT-based monitoring modules. It tracks passenger count with infrared sensors, monitors driver health via heartbeat sensors, detects alcohol consumption, identifies driver drowsiness, and monitors fire or fuel leaks. Data is transmitted via GSM and GPS-enabled modules to a central control system, sending immediate alerts to authorities. This proactive approach reduces accidents caused by driver impairment, overcrowding, or hazardous vehicle conditions, improving passenger safety and operational efficiency.",
+        tech: "ESP32, MQ2 Gas Sensor, MQ3 Alcohol Sensor, IR Sensor, MQ6 Gas Sensor, Flame Sensor, Servo Motor, L298 Motor Driver, DC Water Pump, GPS Module, GSM Module, MAX30100 Heartbeat Sensor",
+        flowchart: "Assets/Images/Project-2k26/12/flow.png",
+        image: "Assets/Images/Project-2k26/12/system.png",
+        circuit: "Assets/Images/Project-2k26/12/circuit.png",
+        github: ""
+    },
+    {
+        title: "Automatic Fire Extinguisher Robot",
+        description: "The Automatic Fire Extinguisher Robot autonomously detects and extinguishes small fires indoors. Three infrared flame sensors locate fire direction, and an Arduino microcontroller makes real-time decisions. The robot moves safely via an L298 motor driver and stops upon fire detection. A relay and servo motor control the pump to extinguish the fire. The system is designed to operate in hazardous conditions where human assistance is risky, providing a cost-effective solution for early fire suppression. Wireless monitoring and additional sensors can be integrated later.",
+        tech: "Arduino UNO, Flame Sensor, L298 Motor Driver, Relay, Servo Motor, Water Pump",
+        flowchart: "Assets/Images/Project-2k26/13/flow.png",
+        image: "Assets/Images/Project-2k26/13/system.png",
+        circuit: "Assets/Images/Project-2k26/13/circuit.png",
+        github: ""
+    },
+    {
+        title: "Smart Helmet For Safe Riding",
+        description: "Two-wheeler accidents often result from rider fatigue, intoxication, or delayed medical assistance. Conventional helmets only offer protection. This Smart Helmet monitors the rider's condition and enhances safety through alcohol detection, drowsiness detection, and accident detection using microcontroller-based sensors. In case of an accident, it sends an emergency message with location via GSM and GPS modules. The system was implemented and tested under various conditions, offering a novel approach to accident prevention and emergency response in two-wheeler riding.",
+        tech: "ESP32, MQ3, GPS, GSM, IR Sensor, 9V Battery",
+        flowchart: "Assets/Images/Project-2k26/14/flow.png",
+        image: "Assets/Images/Project-2k26/14/system.png",
+        circuit: "Assets/Images/Project-2k26/14/circuit.png",
+        github: ""
+    },
+    {
+        title: "IoT based KSRTC Local Bus Arrival and Departure Monitoring System",
+        description: "This IoT-based system monitors bus arrivals and departures in real time to improve operational efficiency and passenger convenience. RFID uniquely identifies buses, while ultrasonic sensors detect arrival and departure without contact. An Arduino microcontroller processes sensor data, sending operational status via ESP32 Wi-Fi to a web-based dashboard. Administrators monitor bus movements and issue alerts, while conductors update passenger counts. Passengers can view live tracking information, enhancing transparency and reliability in public transport services.",
+        tech: "Arduino UNO, MFRC522 RFID Reader Module, HC-SR04 Ultrasonic Sensor, ESP32 WiFi Development Board",
+        flowchart: "Assets/Images/Project-2k26/15/flow.png",
+        image: "Assets/Images/Project-2k26/15/system.png",
+        circuit: "Assets/Images/Project-2k26/15/circuit.png",
+        github: ""
     }
     // Add remaining 28 projects here
 ];
