@@ -305,7 +305,7 @@ document.addEventListener("keydown", function (e) {
 
 
 // ================= DEFAULT LOAD =================
-loadProjects("2025");
+loadProjects("2026");
 
 window.onload = function () {
     const isMobile = window.innerWidth <= 768;
