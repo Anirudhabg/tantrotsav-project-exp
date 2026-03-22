@@ -435,7 +435,7 @@ html {
         width: 100%;
     }
 
-    .footer-left{
+    .footer-left {
         flex-direction: column;
     }
 
@@ -445,5 +445,47 @@ html {
 
     .footer-bottom {
         font-size: 0.8rem;
+    }
+}
+
+.year-buttons {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.year-buttons button {
+    background: linear-gradient(135deg, #0A579B, #0297DE);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.year-buttons button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.year-buttons button:active {
+    transform: scale(0.95);
+}
+
+.year-buttons button.active {
+    background: #fff;
+    color: #0A579B;
+    border: 2px solid #0A579B;
+}
+
+@media (max-width: 600px) {
+    .year-buttons button {
+        width: 80%;
+        display: block;
+        margin: 10px auto;
     }
 }
