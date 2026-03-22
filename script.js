@@ -169,14 +169,68 @@ const projects2025 = [
 // 2026 Projects (29)
 const projects2026 = [
     {
-        title: "Your New Project",
-        description: "Description here...",
-        tech: "Tech stack",
-        flowchart: "",
-        image: "",
+        title: "AgriNexora: Multi-Modal System for Crop Health, Market Strategy and Sustainable Farming",
+        description: "In many developing regions, farming plays a major role in the economy. Farmers face challenges like crop diseases, fluctuating product prices, insufficient expert consultations, and lack of awareness about government initiatives. AgriNexora is an intelligent farming support system that helps farmers make informed decisions. It combines text-based advisory systems, market analysis tools, and image-based disease identification into a single platform. CNNs analyze crop leaf images uploaded by farmers, while an NLP chatbot provides guidance on farming, pricing, and government programs. Evaluation using real crop photos and sample datasets showed that the system effectively detects crop diseases and provides useful advisory services, demonstrating how AI can enhance smarter and more productive farming.",
+        tech: "Python, Flask, CNN",
+        flowchart: "Assets/Images/Project-2k26/1/flow.png",
+        image: "Assets/Images/Project-2k26/1/system.png",
         circuit: "",
         github: ""
     },
+    {
+        title: "QStack: An AI-Powered Learning and Analytics Platform with Personalized Learning",
+        description: "Preparing for placements or quiz competitions requires heavy research on the internet and other sources, which often doesn’t guarantee consistent learning. QStack uses AI and machine learning techniques, including Item Response Theory (IRT) and regression-based performance modeling, to analyze user performance and learning behavior. It identifies strengths and weaknesses, provides visual feedback, and helps plan learning activities for overall improvement. Users can prepare for various quizzes on a unified platform. Detailed dashboards with statistical insights monitor progress and reduce manual research effort by up to 80%, providing a clear baseline for placement training.",
+        tech: "TypeScript, Judge0, React, Vite, TailwindCSS, Radix UI",
+        flowchart: "Assets/Images/Project-2k26/2/flow.png",
+        image: "Assets/Images/Project-2k26/2/system.png",
+        circuit: "",
+        github: ""
+    },
+    {
+        title: "Yoga Pose Analysis and Real Time Correction System",
+        description: "Yoga improves physical fitness and mental health, but incorrect practice reduces benefits and may cause injury. This system uses AI-based vision techniques with machine learning and deep learning to analyze human posture and provide instant corrections. Key body points are extracted from live video, joint angles are calculated, and an XGBoost model recognizes poses. The system provides real-time text and voice feedback, supports multiple languages (Kannada, English, Hindi), and includes a secure user login and chatbot for yoga-related queries. Testing shows accurate pose recognition and effective real-time guidance, offering an affordable alternative to instructor-led training.",
+        tech: "Python, MediaPipe Pose, OpenCV, XGBoost, Flask",
+        flowchart: "Assets/Images/Project-2k26/3/flow.png",
+        image: "Assets/Images/Project-2k26/3/system.png",
+        circuit: "",
+        github: ""
+    },
+    {
+        title: "VisionTrack: An IoT-Enabled Machine Learning and Deep Learning System for Real-Time Missing Person Identification",
+        description: "VisionTrack supports real-time identification of missing persons by analyzing live video feeds using facial recognition. The system monitors CCTV or webcam streams, detects faces, extracts facial images, and organizes them locally by date. Users can upload reference images of missing individuals, which are compared with stored records using deep learning for feature extraction and similarity matching. Upon a match, the system presents the video segment with detection time and camera source. Local processing ensures privacy, fast access, and reduces manual effort for CCTV operators while enabling quicker verification and response.",
+        tech: "Python, OpenCV, Flask, Camera",
+        flowchart: "Assets/Images/Project-2k26/4/flow.png",
+        image: "Assets/Images/Project-2k26/4/system.png",
+        circuit: "",
+        github: ""
+    },
+    {
+        title: "Smart DeepFake Detection System",
+        description: "The rise of realistic deepfakes threatens digital media authenticity. This system detects facial deepfakes in images and videos using a deep learning approach with Xception CNN and transfer learning. Data from FaceForensics++, Celeb-DF, and DFDC are combined into a unified dataset. Video frames are extracted for analysis, and Grad-CAM generates visual explanations highlighting key facial areas. Ollama provides textual explanations for better understanding. The system delivers accurate, interpretable results for real-time detection, helping maintain trust in digital media.",
+        tech: "Python, TensorFlow 2.x with Keras API, GradCAM, OpenCV, Flask, Ollama with Mistral 7B, PIL, Python dotenv",
+        flowchart: "Assets/Images/Project-2k26/5/flow.png",
+        image: "Assets/Images/Project-2k26/5/system.png",
+        circuit: "",
+        github: ""
+    },
+    {
+        title: "AI-Based Virtual Try-On and Product Recommendation System",
+        description: "This system helps online shoppers determine clothing fit and size using AI and computer vision. Techniques like image segmentation, pose estimation, and alignment provide accurate virtual try-on visualization. Deep learning generates personalized clothing recommendations, enhancing customer satisfaction, reducing return rates, and improving engagement. By combining virtual fitting with adaptive recommendations, users gain a more confident and effective online shopping experience.",
+        tech: "Python, Matplotlib, MediaPipe, OpenCV, Flask",
+        flowchart: "Assets/Images/Project-2k26/6/flow.png",
+        image: "Assets/Images/Project-2k26/6/system.png",
+        circuit: "",
+        github: ""
+    },
+    {
+        title: "Smart Gait Detection and Analysis System for Surveillance",
+        description: "Conventional surveillance methods often fail in crowded or low-light environments. This system uses gait, a behavioral biometric, to identify individuals by their walking patterns. Live video is processed to extract body landmarks, from which gait features such as joint angles, stride patterns, and motion characteristics are derived. Features are compared with stored gait profiles for identification. The system also performs real-time activity analysis to detect suspicious or abnormal behavior, generates alerts with snapshots and timestamps, and supports multi-camera setups. This integrated platform enhances surveillance reliability and responsiveness in security-sensitive areas.",
+        tech: "Python, OpenCV, MediaPipe, YOLO, SQLite",
+        flowchart: "Assets/Images/Project-2k26/7/flow.png",
+        image: "Assets/Images/Project-2k26/7/system.png",
+        circuit: "",
+        github: ""
+    }
     // Add remaining 28 projects here
 ];
 
@@ -191,11 +245,11 @@ function loadProjects(year) {
 
     data.forEach((project, index) => {
         const card = `
-            <div class="project-card" onclick="openModal(${index}, '${year}')">
-                <img src="${'Assets/Images/Logo.png'}">
-                <h3>${project.title}</h3>
-            </div>
-        `;
+    <div class="project-card" onclick="openModal(${index}, '${year}')">
+        <img src="${year === '2025' ? 'Assets/Images/tantrotsav.png' : 'Assets/Images/Logo.png'}">
+        <h3>${project.title}</h3>
+    </div>
+`;
         container.innerHTML += card;
     });
 }
