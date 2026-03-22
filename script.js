@@ -302,8 +302,71 @@ const projects2026 = [
         image: "Assets/Images/Project-2k26/15/system.png",
         circuit: "Assets/Images/Project-2k26/15/circuit.png",
         github: ""
+    },
+    {
+        title: "Automatic Power Line Fault Detection and Reporting System Using IoT",
+        description: "The Automatic Power Line Fault Detection and Reporting System using IoT enhances safety and minimizes downtime in electrical distribution networks. The system continuously monitors power lines to detect faults such as line breakage, short circuits, and fire hazards. Sensors integrated with a microcontroller identify real-time abnormalities, and the affected line is automatically isolated through relay control. The exact faulty pole number is displayed on an LCD at the main transformer for quick identification. An SMS alert sends detailed fault information including type, pole location, and GPS coordinates to authorities. A flame sensor triggers a buzzer when fire is detected near power lines or equipment. The system improves fault detection accuracy, enables faster fault localization, and supports efficient maintenance for a safer, more reliable power distribution system.",
+        tech: "ESP32 Board, Relay Module, LCD Module, GPS Module, GSM Module, Flame Sensor",
+        flowchart: "Assets/Images/Project-2k26/16/flow.png",
+        image: "Assets/Images/Project-2k26/16/system.png",
+        circuit: "Assets/Images/Project-2k26/16/circuit.png",
+        github: ""
+    },
+    {
+        title: "IoT Based Smart Sintex Tank Cleaner",
+        description: "The IoT-based Smart Sintex Tank Cleaner automates water quality monitoring and cleaning of water storage tanks. Using an ESP32 microcontroller with turbidity and TDS sensors, water quality is measured, and an ultrasonic sensor monitors water level. The system connects to the Blynk IoT platform for real-time data visualization and remote control via a smartphone app. Automated cleaning is performed with a DC motor driven by an L298N motor driver, while spray and discharge pumps are controlled through relays. This system minimizes human intervention, improves efficiency, enhances water safety, and provides a cost-effective, scalable solution for residential and small commercial water storage.",
+        tech: "ESP32 Microcontroller Board, Waterproof Ultrasonic Sensor, Turbidity Sensor, TDS Sensor Meter",
+        flowchart: "Assets/Images/Project-2k26/17/flow.png",
+        image: "Assets/Images/Project-2k26/17/system.png",
+        circuit: "Assets/Images/Project-2k26/17/circuit.png",
+        github: ""
+    },
+    {
+        title: "IOT-Enabled Smart Ambulance with Real Traffic Signal Priority and Hospital Integration",
+        description: "This IoT-based Smart Ambulance System improves emergency response by monitoring patient health variables such as body temperature and heart rate. GPS-enabled microcontrollers send patient data to a cloud server, allowing hospitals to prepare interventions before arrival. The system prioritizes ambulances at traffic signals, enabling faster movement through traffic. Critical health alerts trigger immediate medical assistance. The solution leverages IoT for reliable, scalable, and affordable emergency healthcare, enhancing ambulance services and patient outcomes.",
+        tech: "ESP8266, ESP32 NdeMCU, Temperature Sensor, HeartRate Sensor, Traffic Light, 16×2 LCD Module",
+        flowchart: "Assets/Images/Project-2k26/18/flow.png",
+        image: "Assets/Images/Project-2k26/18/system.png",
+        circuit: "Assets/Images/Project-2k26/18/circuit.png",
+        github: ""
+    },
+    {
+        title: "SmartStep: IOT Enabled Footstep Power Generation And Utilization",
+        description: "SmartStep captures electrical energy from human footsteps using piezoelectric sensors. The generated alternating voltage is rectified to direct current and stored in a rechargeable Li-ion battery. An Arduino Nano tracks footstep activity and real-time voltage, while an Arduino Uno controls output devices like fans and LED lights based on ambient conditions and human presence. This system enables practical energy harvesting from everyday activities, promoting energy conservation and intelligent, sustainable infrastructure in crowded public areas.",
+        tech: "Arduino Nano, Arduino Uno, Piezoelectric Sensor, Bridge Rectifier Diode, Capacitor, Resistors, OLED Display, IR Sensor, LDR, Relay Module, DC Fan, BC547 Transistor",
+        flowchart: "Assets/Images/Project-2k26/19/flow.png",
+        image: "Assets/Images/Project-2k26/19/system.png",
+        circuit: "Assets/Images/Project-2k26/19/circuit.png",
+        github: ""
+    },
+    {
+        title: "Solar Panel Dust and Damage Detection with Cleaning System",
+        description: "This system automates monitoring and maintenance of solar panels by detecting dust and surface damage. Sensors detect water availability, panel condition, and dust levels. A color sensor identifies damage and dust using light intensity changes, while IR sensors detect panel edges for navigation. Automated cleaning uses a water pump and brush motor, activating only when needed and monitoring water level to prevent dry operation. An IoT dashboard provides real-time updates on water level, dust, and damage status, enhancing solar panel efficiency and maintenance.",
+        tech: "Arduino Uno Microcontroller, TCS34725 Color Sensor, Infrared (IR) Sensor, Water Level Sensor, L298N Motor Driver Module, Relay Module, DC Motor, I2C LCD Display, Node MCU, Buck Converter",
+        flowchart: "Assets/Images/Project-2k26/20/flow.png",
+        image: "Assets/Images/Project-2k26/20/system.png",
+        circuit: "Assets/Images/Project-2k26/20/circuit.png",
+        github: ""
+    },
+    {
+        title: "Smart Mushroom Growth Monitoring And Automation System",
+        description: "This IoT-based system automates mushroom cultivation by monitoring environmental parameters including temperature, humidity, CO2, soil moisture, and light intensity using ESP32 and multiple sensors. Actuators like mist makers, fans, heaters, and grow lights are controlled via relay modules for optimal conditions. Local monitoring is provided through an OLED display, while remote monitoring and control is enabled via the Blynk app. Operating in automatic and manual modes, the system enhances productivity, reduces labor, and provides a scalable, cost-effective solution for smart mushroom cultivation.",
+        tech: "ESP32 Microcontroller, DHT11 Module, MQ135 Air Quality and CO2 Unit, Soil Moisture Detector, Light Dependent Resistor Module, Relay Module, Ultrasonic Mist Maker, Fan and Heating Element, Fruiting Light, OLED Display",
+        flowchart: "Assets/Images/Project-2k26/21/flow.png",
+        image: "Assets/Images/Project-2k26/21/system.png",
+        circuit: "Assets/Images/Project-2k26/21/circuit.png",
+        github: ""
+    },
+    {
+        title: "Smart Railway Track Monitoring System",
+        description: "The Smart Railway Track Monitoring System enhances rail safety by detecting obstacles and rail damages. Ultrasonic sensors detect obstacles, and IR sensors identify rail damage. Data is sent to the train’s microcontroller for processing and displayed to the operator via LCD with audible warnings. GPS tracks the location of damages. Wi-Fi-enabled communication sends messages to station systems, where LCD displays and sound alerts notify personnel. This system ensures timely detection of issues, improving railway safety and reducing accident risks.",
+        tech: "ESP32, Ultrasonic Sensor, IR Sensor, Buzzer, LCD Display, GPS Module, GSM Module",
+        flowchart: "Assets/Images/Project-2k26/22/flow.png",
+        image: "Assets/Images/Project-2k26/22/system.png",
+        circuit: "Assets/Images/Project-2k26/22/circuit.png",
+        github: ""
     }
-    // Add remaining 28 projects here
+
 ];
 
 
