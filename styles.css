@@ -1,20 +1,25 @@
+/* =======================
+   GLOBAL STYLES
+======================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Questrial", sans-serif;
-
 }
 
-body,
-html {
+html,
+body {
     height: auto;
     width: 100%;
-    font-family: "Questrial", sans-serif;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-
+    scroll-behavior: smooth;
 }
 
+
+/* =======================
+   LOADER
+======================= */
 #loader {
     position: fixed;
     top: 0;
@@ -35,14 +40,16 @@ html {
     display: none;
 }
 
-/* Main content hidden by default */
 #main-content {
     display: none;
     padding: 2rem;
     text-align: center;
 }
 
-/* Hero section styling */
+
+/* =======================
+   HERO SECTION
+======================= */
 .hero {
     display: flex;
     justify-content: center;
@@ -62,9 +69,7 @@ html {
     font-weight: 100;
     letter-spacing: 4px;
     color: white;
-    text-shadow:
-        5px 0 red,
-        -5px 0 blue;
+    text-shadow: 5px 0 red, -5px 0 blue;
 }
 
 .subtitle {
@@ -80,7 +85,31 @@ html {
     color: #ccc;
 }
 
-/* Animation */
+
+/* =======================
+   BUTTON (EXPLORE)
+======================= */
+.explore-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =======================
+   ANIMATION
+======================= */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -93,22 +122,10 @@ html {
     }
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-    .title {
-        font-size: 2.5rem;
-    }
 
-    .subtitle {
-        font-size: 1.2rem;
-    }
-
-    .organizer,
-    .college {
-        font-size: 0.9rem;
-    }
-}
-
+/* =======================
+   ABOUT COLLEGE
+======================= */
 .about-college {
     display: flex;
     flex-wrap: wrap;
@@ -143,11 +160,14 @@ html {
     gap: 1rem;
 }
 
-.image-top img {
+.image-top img,
+.image-bottom img {
     width: 100%;
-    height: auto;
     border-radius: 10px;
     object-fit: cover;
+}
+
+.image-top img {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -157,34 +177,15 @@ html {
 }
 
 .image-bottom img {
-    flex: 1;
     height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+    flex: 1;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .about-left h2 {
-        font-size: 2rem;
-    }
 
-    .about-left p {
-        font-size: 1rem;
-    }
-
-    .image-bottom {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image-bottom img {
-        max-width: 90%;
-        height: auto;
-    }
-}
-
+/* =======================
+   ABOUT DEPARTMENT
+======================= */
 .about-department {
     display: flex;
     flex-wrap: wrap;
@@ -192,7 +193,6 @@ html {
     background-color: #f9f9f9;
     color: #333;
     gap: 2rem;
-    align-items: flex-start;
 }
 
 .dept-left {
@@ -204,9 +204,7 @@ html {
 
 .dept-left img {
     width: 100%;
-    height: auto;
     border-radius: 10px;
-    object-fit: cover;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -227,21 +225,10 @@ html {
     text-align: justify;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .about-department {
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-    }
 
-    .dept-left,
-    .dept-right {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
-
+/* =======================
+   PROJECT SECTION
+======================= */
 .projects-section {
     padding: 4rem 2rem;
     background-color: #f9f9f9;
@@ -264,9 +251,9 @@ html {
     padding: 1rem;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .project-card img {
@@ -281,16 +268,15 @@ html {
     transform: scale(1.03);
 }
 
-/* Modal Styles */
+
+/* =======================
+   MODAL
+======================= */
 .project-modal {
     display: none;
     position: fixed;
     z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
+    inset: 0;
     background-color: rgba(0, 0, 0, 0.8);
     padding-top: 60px;
 }
@@ -304,12 +290,6 @@ html {
     position: relative;
 }
 
-.project-modal-content p,
-.project-modal-content ul {
-    text-align: justify;
-    line-height: 1.7;
-}
-
 .modal-image {
     width: 70%;
     margin: 1rem 0;
@@ -320,10 +300,9 @@ html {
     position: absolute;
     top: 20px;
     right: 25px;
-    color: #aaa;
     font-size: 30px;
-    font-weight: bold;
     cursor: pointer;
+    color: #aaa;
 }
 
 .close-btn:hover {
@@ -331,123 +310,9 @@ html {
 }
 
 
-.footer {
-    background-color: #0f2027;
-    color: #fff;
-    padding: 2rem;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.footer-left {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.footer-logo {
-    height: 80px;
-    width: auto;
-}
-
-.college-name {
-    display: flex;
-    flex-direction: column;
-}
-
-.vivekananda {
-    color: orange;
-    font-size: 1.8rem;
-    margin: 0;
-}
-
-.vcet-sub {
-    color: white;
-    font-size: 0.9rem;
-    margin: 0;
-}
-
-.footer-middle {
-    text-align: center;
-    max-width: 300px;
-}
-
-.footer-middle h3 {
-    margin-bottom: 0.5rem;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.social-icons a {
-    color: white;
-    font-size: 1.5rem;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-icons a:hover {
-    transform: scale(1.2);
-    color: orange;
-}
-
-.footer-right {
-    max-width: 400px;
-}
-
-.footer-right a {
-    color: orange;
-    text-decoration: none;
-}
-
-.footer-right a:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 1.5rem;
-    font-size: 0.85rem;
-    color: #aaa;
-    border-top: 1px solid #333;
-    margin-top: 1.5rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left,
-    .footer-middle,
-    .footer-right {
-        width: 100%;
-    }
-
-    .footer-left {
-        flex-direction: column;
-    }
-
-    .footer-logo {
-        height: 60px;
-    }
-
-    .footer-bottom {
-        font-size: 0.8rem;
-    }
-}
-
+/* =======================
+   YEAR BUTTONS
+======================= */
 .year-buttons {
     text-align: center;
     margin: 30px 0;
@@ -464,16 +329,10 @@ html {
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .year-buttons button:hover {
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-}
-
-.year-buttons button:active {
-    transform: scale(0.95);
 }
 
 .year-buttons button.active {
@@ -482,10 +341,159 @@ html {
     border: 2px solid #0A579B;
 }
 
-@media (max-width: 600px) {
+
+/* =======================
+   FOOTER
+======================= */
+/* =======================
+   FOOTER (FINAL FIX)
+======================= */
+.footer {
+    background-color: #0f2027;
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* LEFT */
+.footer-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo {
+    height: 70px;
+}
+
+.college-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.vivekananda {
+    color: orange;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.vcet-sub {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* MIDDLE */
+.footer-middle {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-middle h3 {
+    margin-bottom: 10px;
+}
+
+/* SOCIAL */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: orange;
+    transform: scale(1.2);
+}
+
+/* RIGHT */
+.footer-right {
+    flex: 1;
+}
+
+.footer-right h3 {
+    margin-bottom: 10px;
+}
+
+.footer-right a {
+    color: orange;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+/* BOTTOM */
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 0.85rem;
+    color: #aaa;
+    border-top: 1px solid #333;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 768px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .organizer,
+    .college {
+        font-size: 1rem;
+    }
+
+    .about-department,
+    .about-college {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-bottom {
+        flex-direction: column;
+    }
+
     .year-buttons button {
         width: 80%;
-        display: block;
-        margin: 10px auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left {
+        flex-direction: column;
+    }
+
+    .footer-middle,
+    .footer-right {
+        width: 100%;
+    }
+
+    .footer-logo {
+        height: 60px;
     }
 }

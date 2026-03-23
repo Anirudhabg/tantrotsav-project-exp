@@ -365,8 +365,50 @@ const projects2026 = [
         image: "Assets/Images/Project-2k26/22/system.png",
         circuit: "Assets/Images/Project-2k26/22/circuit.png",
         github: ""
+    },
+    {
+        title: "HydroRenew: Intelligent Water Suction and Reuse System",
+        description: "Heavy rain often causes water clogging on roads and drainage systems in both urban and rural areas, making manual solutions impractical. This IoT-based system automatically detects clogging using ultrasonic sensors, removes water using a DC pump, and filters it. Based on TDS levels, clean water is redirected for reuse in applications such as gardening and cleaning. The system provides real-time monitoring of water level, pump status, and tank capacity through the Blynk IoT dashboard, reducing human effort and promoting efficient water reuse.",
+        tech: "ESP32 Module, TDS Sensor, DC Water Pump, Ultrasonic Sensor",
+        flowchart: "Assets/Images/Project-2k26/23/flow.png",
+        image: "Assets/Images/Project-2k26/23/system.png",
+        circuit: "Assets/Images/Project-2k26/23/circuit.png",
+        github: ""
+    },
+    {
+        title: "AI-Based Online Exam Proctoring System",
+        description: "This system ensures fair online examinations by automatically monitoring student behavior using AI techniques. It incorporates face recognition to track head and eye movements, detects prohibited materials, and identifies suspicious activities such as tab switching or unusual sounds. When irregularities are found, warnings are generated, and actions are recorded with timestamps. The system produces a detailed report of all observations for review by exam authorities, making it a scalable and reliable solution for maintaining academic integrity in large-scale online exams.",
+        tech: "Python, TensorFlow, OpenCV, COCO SSD, CNN Algorithm",
+        flowchart: "Assets/Images/Project-2k26/24/flow.png",
+        image: "Assets/Images/Project-2k26/24/system.png",
+        github: ""
+    },
+    {
+        title: "AI-Driven Virtual Interviewer for Real-Time Emotion Detection and Behavioral Assessment",
+        description: "This AI-powered virtual interviewing platform evaluates candidate behavior and emotions in real time. Using the DeepFace model and webcam input, it analyzes facial expressions to detect emotional responses during interviews. A language model generates dynamic interview questions based on job descriptions and candidate profiles. The system assesses technical knowledge, confidence, and communication skills, recording responses and generating a detailed report that includes emotion timelines, question history, and performance scores. It provides a realistic interview experience to help users improve self-awareness and interview skills.",
+        tech: "Python, Flask, DeepFace Library, Speech Recognition API, OpenAI API",
+        flowchart: "Assets/Images/Project-2k26/25/flow.png",
+        image: "Assets/Images/Project-2k26/25/system.png",
+        github: ""
+    },
+    {
+        title: "SmartCattle IoT: Intelligent Cow Farm Management System",
+        description: "The SmartCattle IoT system enhances livestock management by monitoring cow health, behavior, and environmental conditions in real time. Sensors track temperature, humidity, feed and water levels, while automated systems control fans, pumps, and feeders. Safety features include smoke and flame detection with instant alerts. RFID tags uniquely identify each cow, and GPS tracking monitors movement. All data is transmitted via an ESP32 controller and displayed on a web dashboard, enabling farmers to efficiently manage livestock, improve animal welfare, and reduce manual effort.",
+        tech: "DHT11 Temperature and Humidity Sensor, GPS Module, GSM Module, Ultrasonic Sensor, MQ2 Gas Sensor, Flame Sensor, Relay, Servo Motor, Fan, DC Water Pump, RFID Module, ESP32 Microcontroller",
+        flowchart: "Assets/Images/Project-2k26/26/flow.png",
+        image: "Assets/Images/Project-2k26/26/system.png",
+        circuit: "Assets/Images/Project-2k26/26/circuit.png",
+        github: ""
+    },
+    {
+        title: "Smart Zebra Crossing System",
+        description: "The Smart Zebra Crossing System improves pedestrian safety by dynamically managing traffic signals based on real-time conditions. Ultrasonic sensors detect approaching vehicles, while an ESP32-CAM module identifies pedestrians near the crossing. The system processes this data to control traffic lights, barriers, LEDs, and buzzers, ensuring safe crossing opportunities. It also alerts drivers when pedestrians are present or when vehicles are on the crossing. This adaptive system reduces accidents and traffic congestion by prioritizing pedestrians only when necessary.",
+        tech: "Servo Motor, Buzzer, Ultrasonic Sensor, ESP32 Camera, DC Motor, Motor Driver, Arduino Uno, LCD Display, Traffic Light",
+        flowchart: "Assets/Images/Project-2k26/27/flow.png",
+        image: "Assets/Images/Project-2k26/27/system.png",
+        circuit: "Assets/Images/Project-2k26/27/circuit.png",
+        github: ""
     }
-
 ];
 
 
